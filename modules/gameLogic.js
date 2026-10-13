@@ -2,7 +2,7 @@
 class GameLogic {
     constructor(gameBoard) {
         this.gameBoard = gameBoard;
-        this.currentPlayer = "X";
+        this.currentPlayer = "A";
         this.gameOver = false;
         this.turnCount = 0;
     }
@@ -61,7 +61,7 @@ class GameLogic {
     }
 
     switchPlayer() {
-        this.currentPlayer = this.currentPlayer === "X" ? "O" : "X";    //ternary operator, is checking the 3 conditions in one line
+        this.currentPlayer = this.currentPlayer === "A" ? "Sponder" : "A";    //ternary operator, is checking the 3 conditions in one line
     }
 }
 
